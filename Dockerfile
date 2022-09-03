@@ -49,6 +49,8 @@ RUN set -eux \
         --with-http_stub_status_module \
         --with-http_mp4_module \
         --with-http_realip_module \
+        --with-http_auth_request_module \
+        --with-debug --with-cc-opt='-O0 -g' \
         --with-threads \
         --modules-path=/etc/nginx/modules \
         --add-module=../ngx_http_proxy_connect_module-0.0.3 \
